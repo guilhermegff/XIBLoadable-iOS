@@ -31,7 +31,7 @@ extension XIBLoadable where Self: UIView {
     }
     
     public func add(to view: UIView) {
-        view.addSubview(view)
+        view.addSubview(self)
         self.translatesAutoresizingMaskIntoConstraints = false
         self.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         self.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
